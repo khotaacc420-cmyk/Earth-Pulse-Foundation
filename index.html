@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Earth Pulse Foundation</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="images/logo.png">
+
+<h2>Earth Pulse Foundation</h2>
+
+</div>
+
+<button class="donate">Donate</button>
+
+</header>
+
+<nav>
+
+<ul>
+
+<li><a href="#">Issues</a></li>
+
+<li><a href="#">Our Work</a></li>
+
+<li><a href="#">Events</a></li>
+
+<li><a href="#">About Us</a></li>
+
+<li><a href="#">Join Us</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="earth">
+
+<div class="circle">
+
+<div class="center">Earth</div>
+
+<div class="issue issue1">Air Pollution</div>
+
+<div class="issue issue2">Water</div>
+
+<div class="issue issue3">Climate</div>
+
+<div class="issue issue4">Plastic</div>
+
+</div>
+
+</div>
+
+<div class="slider">
+
+<img id="slide"
+src="images/slide1.jpg">
+
+<div class="dots">
+
+<span></span>
+
+<span></span>
+
+<span></span>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="aim">
+
+<h2>Our Aim</h2>
+
+<p>
+
+Clean Environment • Healthy Life
+
+</p>
+
+<ul>
+
+<li>Tree Plantation Drives</li>
+
+<li>Medical Health Camps</li>
+
+<li>Environmental Awareness</li>
+
+<li>Plastic-Free Campaigns</li>
+
+</ul>
+
+</section>
+
+<script src="script.js"></script>
+<style>
+    *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#eef7ee;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 60px;
+background:white;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:55px;
+}
+
+.donate{
+padding:10px 25px;
+background:#2e8b57;
+color:white;
+border:none;
+border-radius:30px;
+cursor:pointer;
+}
+
+nav{
+background:#ffffff;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+}
+
+nav li{
+margin:20px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+
+.hero{
+display:flex;
+padding:40px;
+gap:40px;
+}
+
+.earth{
+width:35%;
+display:flex;
+justify-content:center;
+}
+
+.circle{
+width:350px;
+height:350px;
+border-radius:50%;
+background:#cce7d0;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.center{
+background:white;
+padding:20px;
+border-radius:50%;
+font-weight:bold;
+}
+
+.issue{
+position:absolute;
+background:white;
+padding:8px 12px;
+border-radius:20px;
+}
+
+.issue1{
+top:30px;
+}
+
+.issue2{
+right:20px;
+}
+
+.issue3{
+bottom:30px;
+}
+
+.issue4{
+left:20px;
+}
+
+.slider{
+width:65%;
+}
+
+.slider img{
+width:100%;
+height:420px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.dots{
+text-align:center;
+margin-top:15px;
+}
+
+.dots span{
+display:inline-block;
+width:12px;
+height:12px;
+background:#999;
+border-radius:50%;
+margin:5px;
+}
+
+.aim{
+padding:60px;
+text-align:center;
+}
+
+.aim h2{
+font-size:40px;
+color:#2e8b57;
+margin-bottom:20px;
+}
+
+.aim ul{
+margin-top:20px;
+display:inline-block;
+text-align:left;
+}
+</style>
+<script>
+// Your JavaScript
+const images = [
+    "images/slide1.webp",
+    "images/slide2.jpg",
+    "images/slide3.jpeg"
+];
+
+let i = 0;
+
+setInterval(() => {
+    i++;
+    if (i == images.length) i = 0;
+    document.getElementById("slide").src = images[i];
+}, 3000);
+</script>
+
+
+</body>
+
+</html>
